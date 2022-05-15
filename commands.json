@@ -1,0 +1,225 @@
+{
+  "commands": [
+    {
+      "name": "getdata",
+      "description": "Responde con los datos de un usuario, exclusivo para moderadores",
+      "type": 1,
+      "default_member_permissions": 2,
+      "options": [
+        {
+          "name": "user",
+          "description": "El usuario del que quieres la información",
+          "type": 6,
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "info",
+      "description": "Responde con la información que hayas pedido",
+      "type": 1,
+      "options": [
+        {
+          "name": "server",
+          "description": "Responde con la información del servidor",
+          "type": 1
+        },
+        {
+          "name": "realm",
+          "description": "Responde con la información del Realm",
+          "type": 1
+        }
+      ]
+    },
+    {
+      "name": "level",
+      "description": "Responde con la información de nivel de un usuario",
+      "type": 1,
+      "options": [
+        {
+          "name": "user",
+          "description": "El usuario del que quieres la información",
+          "type": 6,
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "mydata",
+      "description": "Responde con tus datos de usuario",
+      "type": 1
+    },
+    {
+      "name": "poll",
+      "description": "Crea una encuesta, exclusivo moderadores",
+      "type": 1,
+      "default_member_permissions": 2,
+      "options": [
+        {
+          "name": "title",
+          "description": "El título de la encuesta",
+          "type": 3,
+          "required": true
+        },
+        {
+          "name": "description",
+          "description": "La descripción de la encuesta",
+          "type": 3,
+          "required": true
+        },
+        {
+          "name": "option1",
+          "description": "La primera opción de la encuesta",
+          "type": 3,
+          "required": true
+        },
+        {
+          "name": "option2",
+          "description": "La segunda opción de la encuesta",
+          "type": 3,
+          "required": true
+        },
+        {
+          "name": "option3",
+          "description": "La tercera opción de la encuesta",
+          "type": 3
+        },
+        {
+          "name": "option4",
+          "description": "La cuarta opción de la encuesta",
+          "type": 3
+        },
+        {
+          "name": "option5",
+          "description": "La quinta opción de la encuesta",
+          "type": 3
+        }
+      ]
+    },
+    {
+      "name": "setinfo",
+      "description": "Añade información al bot, exclusivo para administradores",
+      "type": 1,
+      "default_member_permissions": 8,
+      "options": [
+        {
+          "name": "realm",
+          "description": "Añade información sobre el Realm, exclusivo para administradores",
+          "type": 1,
+          "options": [
+            {
+              "name": "name",
+              "description": "El nombre de la información que quieres añadir",
+              "type": 3,
+              "required": true
+            },
+            {
+              "name": "value",
+              "description": "El valor de la información que quieres añadir",
+              "type": 3,
+              "required": true
+            }
+          ]
+        },
+        {
+          "name": "level",
+          "description": "Añade información sobre el nivel, exclusivo para administradores",
+          "type": 1,
+          "options": [
+            {
+              "name": "user",
+              "description": "El usuario cuyo nivel quieres sobreescribir",
+              "type": 6,
+              "required": true
+            },
+            {
+              "name": "xp",
+              "description": "La XP que quieres aplicar",
+              "type": 4,
+              "required": true
+            }
+          ]
+        },
+        {
+          "name": "invites",
+          "description": "Elimina una cuenta de invitaciones, exclusivo para administradores",
+          "type": 1,
+          "options": [
+            {
+              "name": "user",
+              "description": "El usuario cuya cuenta quieres eliminar",
+              "type": 6,
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setinviter",
+      "description": "Define el usuario que te ha invitado al servidor",
+      "type": 1,
+      "options": [
+        {
+          "name": "user",
+          "description": "El usuario que te ha invitado",
+          "type": 6,
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "unverify",
+      "description": "Borra los datos y verificación de un miembro, exclusivo para moderadores",
+      "type": 1,
+      "default_member_permissions": 2,
+      "options": [
+        {
+          "name": "id",
+          "description": "La ID del usuario cuyos datos quieres eliminar",
+          "type": 3,
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "user",
+      "description": "Responde con la información del usuario solicitado",
+      "type": 1,
+      "options": [
+        {
+          "name": "user",
+          "description": "El usuario del que quieres la información",
+          "type": 6,
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "verify",
+      "description": "Verifica a un usuario, exclusivo para moderadores",
+      "type": 1,
+      "default_member_permissions": 2,
+      "options": [
+        {
+          "name": "user",
+          "description": "El usuario al que quieres verificar",
+          "type": 6,
+          "required": true
+        },
+        {
+          "name": "username",
+          "description": "El nombre de usuario del usuario que quieres verificar",
+          "type": 3,
+          "required": true
+        },
+        {
+          "name": "ip",
+          "description": "La IP del usuario que quieres verificar",
+          "type": 3,
+          "required": true
+        }
+      ]
+    }
+  ]
+}
